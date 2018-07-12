@@ -1,0 +1,12 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#
+# (c) 2018, Ricardo Carrillo Cruz <ricarril@redhat.com>
+# (c) 2018, Yanis Guenane <yguenane@redhat.com>
+# GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
+
+---
+- name: Create SSH key
+  ec2_key:
+    name: '{{ cloud_sshkey_name }}'
+    key_material: '{{ cloud_sshkey_content }}'
