@@ -3,3 +3,4 @@
   ec2_key:
     name: '{{ cloud_sshkey_name }}'
     key_material: '{{ cloud_sshkey_content }}'
+    state: '{{ cloud_sshkey_state|default("present") }}'

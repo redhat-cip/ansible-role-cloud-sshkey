@@ -3,3 +3,4 @@
   os_keypair:
     name: '{{ cloud_sshkey_name }}'
     public_key: '{{ cloud_sshkey_content }}'
+    state: '{{ cloud_sshkey_state|default("present") }}'
