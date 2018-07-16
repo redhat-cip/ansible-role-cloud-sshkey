@@ -1,5 +1,5 @@
 ---
-- name: Create SSH key
+- name: Manage SSH key
   ec2_key:
     name: '{{ cloud_sshkey_name }}'
     key_material: '{{ cloud_sshkey_content }}'

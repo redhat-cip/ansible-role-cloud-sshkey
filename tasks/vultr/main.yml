@@ -1,5 +1,5 @@
 ---
-- name: Create SSH key
+- name: Manage SSH key
   vr_ssh_key:
     name: '{{ cloud_sshkey_name }}'
     ssh_key: '{{ cloud_sshkey_content }}'

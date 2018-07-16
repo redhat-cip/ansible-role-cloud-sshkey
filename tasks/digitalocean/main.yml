@@ -1,5 +1,5 @@
 ---
-- name: Create SSH key
+- name: Manage SSH key
   digital_ocean_sshkey:
     name: '{{ cloud_sshkey_name }}'
     ssh_pub_key: '{{ cloud_sshkey_content }}'
