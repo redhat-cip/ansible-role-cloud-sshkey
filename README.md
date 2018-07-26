@@ -11,11 +11,12 @@ Please refer to [ansible-cloud](https://github.com/redhat-cip/ansible-cloud) [RE
 
 ## Role Variables
 
-| Variable name        | Required  | Default | Type   | Description                   |
-|----------------------|-----------|---------|--------|-------------------------------|
-| cloud_sshkey_name    | True      | N/A     | String | Name of the SSH keya          |
-| cloud_sshkey_content | True      | N/A     | String | Content of the SSH key        |
-| cloud_sshkey_state   | False     | present | String | Should the SSK key be present |
+| Variable name        | Required      | Default | Type   | Description                        |
+|----------------------|---------------|---------|--------|------------------------------------|
+| cloud_sshkey_name    | True          | N/A     | String | Name of the SSH keya               |
+| cloud_sshkey_content | True          | N/A     | String | Content of the SSH key             |
+| cloud_sshkey_region  | (Amazon only) | N/A     | String | Region where the SSH key is stored |
+| cloud_sshkey_state   | False         | present | String | Should the SSK key be present      |
 
 
 ## Example
